@@ -1,0 +1,134 @@
+(version "2.0")
+(game
+ (title "Network")
+ (description "Network - by Sid Sackson\
+
+Please refer to `Network_Rules.pdf' for more detailed rules.\
+
+EQUIPMENT: Network is played on an 8x8 checkerboard.  The players are named `Dark` and `Light`.\ 
+Each player has 10 checkers of their color.  The two players have goal zoned which are marked with\
+dots of their respective color.\
+
+OBJECT: The object of the game is for each player to complete a `network` that joins their two goal zones.\
+The network must originate at one goal zone and terminate at the other and must contain at least 6 pieces which\
+are `connected` to each other along straight lines which may be orthogonal or diagonal.  Two friendly pieces\
+connected if they are either directly adjacent or separated only by empty spaces along a row, column, or diagonal.\
+
+NETWORKS:\
+- An enemy piece placed in the straight line between two friendly pieces breaks the connection.\
+- Although more than one piece may be placed in a goal zone, only a single piece in each goal zone\
+can be included as part of the winning network.\
+- A network may not pass through the same piece twice, even if it is only counted once.\
+- A network may not pass through a player's own color without turning.\
+
+GAME PLAY:\
+Each player alternately places a single piece on a vacant square.  A player may not have more than two pieces in an\
+adjoining group, whether connected orthogonally or diagonally.\
+
+If all the pieces are placed before a winning network is formed, then each player in turn moves any one of their\
+pieces to any vacant square (subject to previous restrictions), until a winning network is formed.  The game ends\
+in a draw if a position occurs three times with the same player to move.\
+
+A player may not make a move which results in both players completing a network.  This could occur when moving\
+a piece which is blocking an opponent's winning network.\
+
+At the conclusion of the game, the computer automatically places markers to display the winning path.\
+
+VARIANT:\
+The `equalized` variant attempts to compensate for the first player's advantage by changing the turn order\
+to Dark-Light-Light, then repeating Dark-Light.")
+
+ (history "Network - By Sid Sackson.\
+
+Programmed by Greg Schmidt.\
+Variant suggested by Keith Carter.\
+-{ Powered by Axiom }-\
+
+Copyright 2011, All Rights Reserved.")
+
+ (engine "Axiom\axiom")
+ (click-sound "Audio\\WoodClick.wav")
+ (release-sound "Audio\\WoodClick.wav")
+ (move-sound "Audio\\WoodClick.wav")
+ (capture-sound " ")
+ (change-sound "Audio\\Ding.wav")
+ (players Dark Light Marker)
+ (turn-order Dark Light )
+ (loss-condition (Dark Light) stalemated )
+ (move-priorities normalmove)
+ (board
+ (image "images\Network\NetworkBoard.bmp" ) 
+ (grid (start-rectangle 42 41 94 93)
+ (dimensions ("a/b/c/d/e/f/g/h" (56 0))  ("8/7/6/5/4/3/2/1" (0 56))  ))
+ )
+ (piece
+ (name Checker)
+ (image Dark "images\Network\Dark51.png" Light "images\Network\Light51.png" ))
+
+ (piece (dummy)
+ (name N)
+ (image Marker "images\Network\N_Marker.png"))
+
+ (piece (dummy)
+ (name NE)
+ (image Marker "images\Network\NE_Marker.png"))
+
+ (piece (dummy)
+ (name N_NE)
+ (image Marker "images\Network\N_NE_Marker.png"))
+
+ (piece (dummy)
+ (name E)
+ (image Marker "images\Network\E_Marker.png"))
+
+ (piece (dummy)
+ (name N_E)
+ (image Marker "images\Network\N_E_Marker.png"))
+
+ (piece (dummy)
+ (name NE_E)
+ (image Marker "images\Network\NE_E_Marker.png"))
+
+ (piece (dummy)
+ (name N_NE_E)
+ (image Marker "images\Network\N_NE_E_Marker.png"))
+
+ (piece (dummy)
+ (name NW)
+ (image Marker "images\Network\NW_Marker.png"))
+
+ (piece (dummy)
+ (name N_NW)
+ (image Marker "images\Network\N_NW_Marker.png"))
+
+ (piece (dummy)
+ (name NE_NW)
+ (image Marker "images\Network\NE_NW_Marker.png"))
+
+ (piece (dummy)
+ (name N_NE_NW)
+ (image Marker "images\Network\N_NE_NW_Marker.png" Light "images\Network\N_NE_NW_Marker.png" ))
+
+ (piece (dummy)
+ (name E_NW)
+ (image Marker "images\Network\E_NW_Marker.png" Light "images\Network\E_NW_Marker.png" ))
+
+ (piece (dummy)
+ (name N_E_NW)
+ (image Marker "images\Network\N_E_NW_Marker.png" Light "images\Network\N_E_NW_Marker.png" ))
+
+ (piece (dummy)
+ (name NE_E_NW)
+ (image Marker "images\Network\NE_E_NW_Marker.png" Light "images\Network\NE_E_NW_Marker.png" ))
+
+ (piece (dummy)
+ (name N_NE_E_NW)
+ (image Marker "images\Network\N_NE_E_NW_Marker.png" Light "images\Network\N_NE_E_NW_Marker.png" ))
+
+; (piece
+; (name Dot)
+; (image Dark "images\Network\Decorative20.png" Light "images\Network\Decorative20.png" ))
+)
+(variant (title "Network - Equalized")
+	(turn-order Dark Light Light repeat Dark Light)
+)

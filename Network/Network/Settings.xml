@@ -1,0 +1,32 @@
+<!--Axiom user settings-->
+<Settings>
+  <ThinkingTime>2000</ThinkingTime>
+  <Strength>290</Strength>
+  <Variety>10</Variety>
+  <AnimateCreations Enabled="True" />
+  <AnimateAllCreations Enabled="False" />
+  <AnimateMoves Enabled="True" />
+  <AnimateAllMoves Enabled="True" />
+  <AnimateCaptures Enabled="False" />
+  <AnimateMoveCaptures Enabled="True" />
+  <HighlightMovable Enabled="True" />
+  <ShowToolBar Enabled="True" />
+  <ShowMoveHistory Enabled="True" />
+  <ShowSearchProgress Enabled="True" />
+  <ShowStatusBar Enabled="True" />
+  <GameRules>Network_Rules.pdf</GameRules>
+  <FromMarker>
+  </FromMarker>
+  <ToMarker>
+  </ToMarker>
+  <DefaultCursor>
+  </DefaultCursor>
+  <GraspCursor>
+  </GraspCursor>
+  <TimeScale>
+  </TimeScale>
+  <TimeUnits>
+  </TimeUnits>
+  <TimeValues>
+  </TimeValues>
+</Settings>
