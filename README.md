@@ -2,9 +2,8 @@
 An 8x8 board game
 This game is built from scratch. See how it works here: https://www.youtube.com/watch?v=HNnpGMG5fs0
 
-
 RULES OF THIS GAME
-This is taken from http://www.cs.berkeley.edu/~jrs/61b/hw/pj2/readme
+(taken from http://www.cs.berkeley.edu/~jrs/61b/hw/pj2/readme)
 "Network
 =======
 Network is played on an 8-by-8 board.  There are two players, "Black" and "White."  Each player has ten
