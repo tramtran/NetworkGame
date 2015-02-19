@@ -5,10 +5,7 @@
  */
 package network;
 
-/**
- *
- * @author kennytran
- */
+
 public class SeparateChainingHash {
     private int size;
     private int nOfBuckets;
