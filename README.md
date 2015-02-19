@@ -1,5 +1,6 @@
 # NetworkGame
 An 8x8 board game
+
 This game is built from scratch. See how it works here: https://www.youtube.com/watch?v=HNnpGMG5fs0
 
 RULES OF THIS GAME
@@ -145,3 +146,4 @@ point, the enemy does not win, but if the network is still intact when the chip
 has been placed back on the board, the player taking the step move loses.  If
 a player makes a move that causes both players to complete a network, the other
 player wins."
+The pictures that I use for this game are taken from http://www.cs.berkeley.edu/~jrs/61b/hw/pj2/pics/.
