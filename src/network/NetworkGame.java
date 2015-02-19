@@ -8,10 +8,6 @@ package network;
 import java.awt.Color;
 import java.awt.Font;
 
-/**
- *
- * @author kennytran
- */
 public class NetworkGame extends javax.swing.JFrame {
 	private static Board mainBoard;
 	public final static int WHITE = -2;
